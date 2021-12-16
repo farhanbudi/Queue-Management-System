@@ -1,0 +1,27 @@
+{
+  "short_name": "PAO-BRI",
+  "name": "Pendaftaran Antrian Online",
+  "lang": "en",
+  "description": "",
+  "background_color": "#014a94",
+  "theme_color": "#014a94",
+  "icons": [
+  {
+   "src": "/apple-icon-144x144-dunplab-manifest-54426.png",
+   "type": "image/png",
+   "sizes": "144x144"
+  },
+  {
+   "src": "/apple-icon-120x120-dunplab-manifest-54426.png",
+   "type": "image/png",
+   "sizes": "120x120"
+  },
+  {
+   "src": "/apple-icon-114x114-dunplab-manifest-54426.png",
+   "type": "image/png",
+   "sizes": "114x114"
+  }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

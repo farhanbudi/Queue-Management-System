@@ -1,0 +1,80 @@
+
+ /* logo */
+  div.login-form h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  /* Form */
+  div.login-form div.form{
+    text-align: center;
+  }
+  /* Form label */
+  div.login-form div.form .label {
+    margin-bottom: 12px;
+  }
+  div.login-form div.form .ant-form-item-label {
+    text-align: center;
+    }
+    div.login-form div.form label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #494949;
+  }
+  /* Form Input */
+  div.login-form input.input,
+  div.login-form span.input {
+    height: 36px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  /* Form Input.Password */
+    div.login-form span.input input#password{
+    text-align: center;
+  }
+  
+  /* Button Login */
+  div.login-form div button.button {
+    margin-top: 24px;
+    border: 1px solid #F59823;
+    height: 40px;
+    margin-bottom: 8px;
+    background: #F59823;
+    box-shadow: 0px 2px 4px rgba(245, 152, 35, 0.5);
+    border-radius: 8px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  div.login-form div button.button:hover {
+    color: #FFFFFF;
+  }
+
+  /* span */
+  div.login-form div.form span.span {
+    font-size: 16px;
+    color: #494949;
+  }
+  /* a daftar */
+  div.login-form span.span a{
+    font-weight: 500;
+    margin-left: 8px;
+    text-decoration: underline;
+  }
+
+/* Register */
+div.login-form .ant-form-item-label>label {
+  flex-direction: row-reverse;
+}
+
+ /* Input alert validation */
+ div.login-form .ant-form-item-explain.ant-form-item-explain-error {
+   font-size: 14px;
+ }

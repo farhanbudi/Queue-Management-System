@@ -1,0 +1,105 @@
+div.auth-layouts {
+      background: linear-gradient(
+        180deg, #014A94 42.65%, rgba(163, 208, 255, 0.59) 125.34%);
+      height: 100vh;
+      padding-top: 60px;
+}
+div.auth-layouts img{
+    width: 100%;
+    margin-bottom: 8px;
+    z-index: 10;
+    position: inherit;
+}
+
+/* Card */
+div.card-auth {
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    z-index: 10;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/*  rounded Design */
+.top-round-design {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -150px;
+    border: 40px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.bottom-round-design {
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+    right: -150px;
+    border: 40px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+}
+@media screen and (min-width: 768px){
+  div.auth-layouts {
+      background: linear-gradient(
+        180deg, #014A94 42.65%, rgba(163, 208, 255, 0.59) 125.34%);
+      height: 100vh;
+      padding-top: 60px;
+}
+
+/*  rounded Design */
+.top-round-design {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    top: -240px;
+    left: -240px;
+    border: 84px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+    position: fixed;
+}
+
+.bottom-round-design {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    position: fixed;
+    bottom: -240px;
+    right: -240px;
+    border: 84px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+}
+}
+
+@media screen and (min-width: 1200px){
+      div.auth-layouts {
+        /* min-height: 100vh; */
+      }
+     
+
+/*  rounded Design */
+.top-round-design {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    top: -240px;
+    left: -240px;
+    border: 84px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+    position: fixed;
+}
+
+.bottom-round-design {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    position: fixed;
+    bottom: -240px;
+    right: -240px;
+    border: 84px solid rgba(62, 121, 181, 0.63);
+    border-radius: 100%;
+}
+}
+

@@ -1,0 +1,12 @@
+.table-data-bank .ant-table-thead > tr > th {
+    color: #FFFFFF;
+    background-color: #014A94;
+}
+
+.table-data-bank tr:nth-child(odd) {
+    background-color: #E5E5E5;
+}
+
+.table-data-bank tr:nth-child(even) {
+    background-color: #F0F0F0;
+}

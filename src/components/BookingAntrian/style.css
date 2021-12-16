@@ -1,0 +1,22 @@
+
+
+ .form-book-nomor-antrian div.form-row{
+     margin-bottom: 64px;
+     align-items: baseline;
+     display: flex;
+ }
+  .form-book-nomor-antrian div.form-input {
+    margin-bottom: 0px;
+  }
+  .form-book-nomor-antrian div.form-button {
+    margin-top: 84px;
+  }
+  @media screen and (min-width: 768px) {
+
+    .form-book-nomor-antrian .ant-form-item {
+        margin-bottom: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {}

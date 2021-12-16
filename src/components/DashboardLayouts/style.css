@@ -1,0 +1,47 @@
+/* Dashboard Layouts */
+div.dashboard-layouts .content{
+    margin-bottom: 40px;
+    max-height: 1600px;
+    height: 100vh;
+    margin-left: 0;
+}
+div.dashboard-layouts .layout{
+    background-color: #ffffff;
+}
+
+/* Content */
+.content{
+    margin-top: 32px;
+    font-size: 16px;
+}
+.content-margin{
+    margin-bottom: 100px;
+}
+
+     
+@media screen and (min-width: 768px) {
+    div.dashboard-layouts .content{
+        margin-left: 35%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    div.dashboard-layouts .content {
+        margin-left: 26%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    div.dashboard-layouts .content {
+        margin-left: 22%;
+    }
+}
+
+/* Fixed-side Navigasi */
+div.fixed-side-navigasi{
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   top: 76px;
+   border-right: 1.4px solid rgb(233, 233, 233);
+   bottom: 0px;
+   z-index: 99;
+   max-height: 1600px;
+}

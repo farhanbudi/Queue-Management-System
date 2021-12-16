@@ -1,0 +1,30 @@
+button.btn-default {
+    text-transform: capitalize;
+    border: 1px solid #d9d9d9;
+    background: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 700;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.btn-default:hover {
+    color: #0064CA;
+    border: 1px solid #0064CA;
+}
+
+button.btn-blue-default {
+    text-transform: capitalize;
+    background-color: #014A94;
+    border: 1px solid #014A94;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+button.btn-blue-default:hover {
+  background-color: #0064CA;
+  border: 1px solid #0064CA;
+}

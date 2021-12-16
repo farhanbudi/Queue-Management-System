@@ -1,0 +1,96 @@
+/* Modal */
+div.default-message .ant-modal-content {
+    border-radius: 20px;
+}
+/* Modal body */
+div.default-message .ant-modal-content .ant-modal-body {
+    padding: 0px;
+    text-align: center;
+    font-family: 'Karla';
+    font-weight: 600;
+}
+
+/* modal Title */
+div.default-message .ant-modal-confirm-title h1 {
+    color: #FF4D4F;
+    text-transform: uppercase;
+}
+div.default-message.message-success .ant-modal-confirm-title h1 {
+    color: #014A94;
+}
+
+/* modal content */
+div.default-message .ant-modal-confirm-content {
+    color: rgba(73, 73, 73, 1);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* modal Button */
+div.default-message .ant-modal-confirm-btns {
+    display: flex;
+    padding: 16px 20px 20px;
+    width: 100%;
+    border-top: 1.4px solid rgba(219, 219, 219, 1);
+}
+
+div.default-message .ant-modal-confirm-btns button {
+    height: 44px;
+    width: 100%;
+}
+
+/* Modal button yes */
+div.default-message .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(1) {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FF4D4F;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+/* Modal button no */
+div.default-message .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(2) {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: #FF4D4F;
+    border: 1px solid #FF4D4F;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Modal button cancel */
+div.default-message button {
+    border-radius: 0px;
+}
+
+div.default-message .ant-modal-confirm-btns button:nth-child(2):hover {
+    background-color: #FF6869;
+    color:#FFFFFF;
+    border: 1px solid #FF6869;
+}
+
+div.default-message.message-success .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(2) {
+    background-color: #014A94;
+    border: 1px solid #014A94;
+}
+
+div.default-message.message-success .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(2):hover {
+    background-color: #0064CA;
+    border: 1px solid #0064CA;
+}
+div.default-message.message-inline button:nth-child(1) {
+    display: none;
+}
+
+div.default-message.message-inline button {
+    border-bottom-right-radius: 20px;
+}

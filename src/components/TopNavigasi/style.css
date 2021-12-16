@@ -1,0 +1,70 @@
+/* style logo */
+div.side-nav-logo {
+    background-color: #014A94;
+    padding-left: 22px;
+    cursor: pointer;
+}
+
+/* side navigasi */
+img.side-nav-logo {
+    width: 200px;
+    display: none;
+}
+
+/* Log Out */
+div.top-navigasi .logout {
+    display: none;
+}
+/* Mobile top navigais Logo */
+div.top-navigasi img.img-mobile-logo {
+    display: visible;
+    background-color: #014A94;
+    margin: auto;
+    cursor: pointer;
+    width: 160px;
+}
+/* Top Navigasi */
+div.top-navigasi header {
+    background-color: rgb(1, 74, 148);
+    height: 66px;
+    text-align: right;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    font-family: 'Karla',sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* Button Logout */
+span.logout {
+    cursor: pointer;
+}
+span.logout svg {
+    margin-left: 4px;
+}
+
+/* ≥ 768px */
+@media screen and (min-width: 768px) {
+img.side-nav-logo{
+    display: block;
+}
+
+div.top-navigasi header{
+    padding: 0 20px;
+}
+
+/* Mobile top navigasi Logo */
+div.top-navigasi img.img-mobile-logo {
+    display: none;
+}
+
+/* Log Out */
+div.top-navigasi .logout {
+    display: block;
+}
+div.top-navigasi header {
+    height: 76px;
+}
+}
