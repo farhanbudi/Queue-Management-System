@@ -2,7 +2,6 @@ import { faCheckCircle, faExclamationTriangle } from "@fortawesome/free-solid-sv
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Modal } from "antd";
   const { confirm } = Modal;
-
 const message = {
   warning: ({ title, content, fnOk = () => {} }) => {
     return confirm({
@@ -23,8 +22,7 @@ const message = {
       },
     });
   },
-
-  success: ({ title, content, fnOk = () => {} }) => {
+  success: ({ title,  content, fnOk = () => {} }) => {
     return confirm({
       title: (
         <h1>
@@ -43,12 +41,7 @@ const message = {
       },
     });
   },
-  confirmWarning: function ({
-    title,
-    content,
-    fnOk = () => {},
-    fnCancel = () => {},
-  }) {
+  confirmWarning: function ({title, content, fnOk = () => {} , fnCancel = ()=>{}}) {
     return confirm({
       title: (
         <h1>
@@ -70,8 +63,7 @@ const message = {
       },
     });
   },
-
-  logout: function ({ fnOk = () => {} }) {
+  logout: function ({fnOk}) {
     return confirm({
       title: (
         <h1>
@@ -96,5 +88,6 @@ const message = {
     });
   },
 };
+
 
 export {message}

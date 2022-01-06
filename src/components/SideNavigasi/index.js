@@ -3,12 +3,11 @@ import {Layout, Menu } from "antd";
 import "./style.css";
 import { useHistory, useLocation } from 'react-router';
 
-const { Sider } = Layout;
-
 export const SideNavigasi = () => {
    
+    const { Sider } = Layout;
     const location = useLocation();
-    const history  = useHistory();
+    const history = useHistory();
     const position = location.pathname.substring(1);
     
     const patt = new RegExp("bank/detail/");
@@ -28,6 +27,7 @@ export const SideNavigasi = () => {
         
     return (
       <Sider width={280}>
+   
         <Menu
           className="side-nav-menu"
           mode="inline"

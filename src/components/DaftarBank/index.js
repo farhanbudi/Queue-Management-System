@@ -47,27 +47,27 @@ export const DaftarListBank = (props) => {
         >
           <Option value="bandung">Bandung</Option>
           <Option value="batam">Batam</Option>
-          <Option value="makassar">Makassar</Option>
           <Option value="jakpus">Jakarta Pusat</Option>
+          <Option value="makassar">Makassar</Option>
           <Option value="medan">Medan</Option>
           <Option value="semua">Semua Bank</Option>
         </Select>
       </div>
       <Table
-        rowKey="id"
+        rowKey="id_bank"
         dataSource={props?.data}
         loading={props.data?.length === 0 ? true : false}
         className="table-data-bank"
         pagination={{ pageSize: 5 }}
       >
-        <Table.Column title="No" dataIndex="id" key="id" />
+        <Table.Column title="No" dataIndex="id_bank" key="id_bank" />
         <Table.Column title="Bank" dataIndex="nama_bank" key="nama_bank" />
         <Table.Column title="Alamat" dataIndex="alamat" key="alamat" />
         <Table.Column
           title={<center>Lihat Detail Antrian</center>}
-          key="id"
+          key="id_bank"
           render={(record) => (
-            <a onClick={()=>redirectToDetailInfo(record.id)}>
+            <a onClick={()=>redirectToDetailInfo(record.id_bank)}>
               <center>Lihat Detail</center>
             </a>
           )}

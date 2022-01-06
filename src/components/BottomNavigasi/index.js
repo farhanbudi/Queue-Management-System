@@ -30,7 +30,7 @@ export const BottomNavigasi = () => {
      const logOut = () => {
        const data = {
          fnOk() {
-           localStorage.removeItem("user_id");
+           localStorage.removeItem("user");
            history.push("/");
          },
        };

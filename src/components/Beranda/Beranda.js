@@ -21,7 +21,7 @@ function Beranda(props) {
             <p className="card-title" style={{ fontSize: "24px" }}>
               <b>Nomor Antrian</b>
             </p>
-            <p className="no-antrian">{props.detail?.nomor_antrian}</p>
+            <p className="no-antrian">{props.detail?.id_booking}</p>
           </Card>
 
           <Row>
@@ -32,7 +32,7 @@ function Beranda(props) {
               >
                 <p className="card-title">Bank Tujuan</p>
                 <p style={{ fontSize: "18px" }}>
-                  <b>{props.detail?.nama_bank}</b>
+                  <b>{props.namaBank}</b>
                 </p>
               </Card>
             </Col>
@@ -55,12 +55,13 @@ function Beranda(props) {
             </Paragraph>
             <Paragraph style={{ marginBottom: "10px" }}>
               <Text strong>
-                {props.date}, pukul {props.detail?.jam_pelayanan} WIB.
+                {props.detail?.tanggal_pelayanan}, pukul{" "}
+                {props.detail?.jam_pelayanan} WIB.
               </Text>
             </Paragraph>
             <Paragraph style={{ marginBottom: 0 }}>
               Untuk mempercepat transaksi, silahkan kunjungi{" "}
-              <Link href="https://eform.bri.co.id" className="color-fire-bush">
+              <Link href="https://eform.bri.co.id" style={{ color: "#014A94" }}>
                 <b>e-form.</b>
               </Link>
             </Paragraph>

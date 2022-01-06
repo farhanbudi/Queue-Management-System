@@ -7,29 +7,27 @@ import Loading from "../../../components/Detail/loading";
 
 export const DetailInfoAntrianPage = () => {
   const { bankId } = useParams();
-  
+  console.log(bankId);
+
   const [detailAntrian, setDetailAntrian] = useState({});
-  const [isLoading, setLoading] = useState();
-
-  const [filterDate, setFilterDate] = useState("");
-
+  const [isLoading, setLoading] = useState(false);
+  const [link, setLink] = useState("/book/create");
   const loadDetail = async () => {
    setLoading(true)
-   await instance
-     .get(`/bank/${await bankId}/antrian${filterDate}`)
-     .then((res) => {
-       setDetailAntrian(res.data.data);
-       setLoading(false);
-       console.log(res.data);
-     })
-     .catch((err) => {
-       console.log(err);
-       setLoading(false);
-     });
+   instance
+      .get(`/bank/detail/${ await bankId}`)
+      .then((res) => {
+          setDetailAntrian(res.data.data);
+          setLoading(false);
+      })
+      .catch((err) => {
+          console.log(err);
+          setLoading(false);
+      });
   };
   useEffect(() => {
     loadDetail();
-  }, [filterDate]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <DashboardLayouts>
@@ -39,8 +37,8 @@ export const DetailInfoAntrianPage = () => {
         <>
           <DetailInfoAntrian
             data={detailAntrian}
-            filterDate={filterDate}
-            setFilterDate={(data) => setFilterDate(data)}
+            link={link}
+            setLink={(data) => setLink(data)}
           />
         </>
       )}

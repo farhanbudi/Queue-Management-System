@@ -30,9 +30,9 @@ export const DaftarBankPage = () => {
   return (
     <DashboardLayouts>
       <DaftarListBank
-        changeUrlBank={(data) => setUrlBank(data === "semua"?"/bank":`bank?kota=${data}`)}
+        changeUrlBank={(data) => setUrlBank(data === "semua"?"/bank":`bank/${data}`)}
         data={dataBankSearch}
-        onChange={(data) => onChange(data.toLowerCase())}
+        onChange={(data) => onChange(data)}
       />
     </DashboardLayouts>
   );

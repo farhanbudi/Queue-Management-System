@@ -13,7 +13,7 @@ export const TopNavigasi = () => {
         const logOut = () => {
           const data = {
             fnOk() {
-              localStorage.removeItem("user_id");
+              localStorage.removeItem("user");
               history.push("/");
             },
           };
@@ -21,7 +21,6 @@ export const TopNavigasi = () => {
         };
 
         const backToBeranda = () => history.push("/");
-        
   return (
     <Affix offsetTop={0} className="top-navigasi">
       <Header>
@@ -40,7 +39,7 @@ export const TopNavigasi = () => {
           onClick={backToBeranda}
         />
         <span className="logout" onClick={logOut}>
-          Keluar<FontAwesomeIcon icon={faSignOutAlt} />
+          Keluar <FontAwesomeIcon icon={faSignOutAlt} />
         </span>
       </Header>
     </Affix>

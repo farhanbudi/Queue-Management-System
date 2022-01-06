@@ -3,7 +3,6 @@ div.dashboard-layouts .content{
     margin-bottom: 40px;
     max-height: 1600px;
     height: 100vh;
-    margin-left: 0;
 }
 div.dashboard-layouts .layout{
     background-color: #ffffff;
@@ -14,34 +13,89 @@ div.dashboard-layouts .layout{
     margin-top: 32px;
     font-size: 16px;
 }
-.content-margin{
-    margin-bottom: 100px;
-}
 
-     
+
+/* Modal */
+div.modal-logout .ant-modal-content{
+    border-radius: 20px;
+}
+/* Modal body */
+div.modal-logout .ant-modal-content .ant-modal-body{
+    padding: 0px;
+    text-align: center;
+    font-family: 'Karla';
+    font-weight: 600;
+}
+/* modal Title */
+div.modal-logout .ant-modal-confirm-title h1{
+    color: #C70740;
+    text-transform: uppercase;
+}
+/* modal content */
+div.modal-logout .ant-modal-confirm-content{
+    color: #C70740;
+}
+/* modal Button */
+div.modal-logout .ant-modal-confirm-btns {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+div.modal-logout .ant-modal-confirm-btns button {
+    height: 44px;
+    width: 100%;
+    margin-top: 26px;
+}
+/* Modal button yes */
+div.modal-logout .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(1){
+    border-bottom-right-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    background-color:#FFFFFF;
+    color: #C70740;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-family: 'Karla', sans-serif;
+}
+div.modal-logout .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(1):hover{
+     background-color:#C70740;
+     color: #FFFFFF;
+    border: 1px solid #C70740;
+}
+/* Modal button cancel */
+div.modal-logout .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(2){
+    margin-left: 0;
+    background-color:#C70740;
+    color: #FFFFFF;
+    border: 1px solid #C70740;
+    border-bottom-left-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+div.modal-logout .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:nth-child(2):hover{
+    background-color: #FFFFFF;
+    color: #C70740;
+    border: 1px solid #e2e2e2;
+}
 @media screen and (min-width: 768px) {
-    div.dashboard-layouts .content{
+    div.dashboard-layouts .content {
         margin-left: 35%;
     }
 }
+
 @media screen and (min-width: 1000px) {
     div.dashboard-layouts .content {
         margin-left: 26%;
     }
 }
+
 @media screen and (min-width: 1200px) {
     div.dashboard-layouts .content {
         margin-left: 22%;
     }
-}
-
-/* Fixed-side Navigasi */
-div.fixed-side-navigasi{
-   background-color: rgb(255, 255, 255);
-   position: fixed;
-   top: 76px;
-   border-right: 1.4px solid rgb(233, 233, 233);
-   bottom: 0px;
-   z-index: 99;
-   max-height: 1600px;
 }

@@ -6,7 +6,7 @@ export const AuthRoute = ({ children, ...rest }) => {
     <Route
       {...rest}
       render={() => {
-        return localStorage.getItem("user_id") ? <Redirect to="/beranda" /> : children;
+        return localStorage.getItem("user") ? <Redirect to="/beranda" /> : children;
       }}
     />
   );

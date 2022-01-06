@@ -1,3 +1,7 @@
+/* Log Out */
+div.top-navigasi .logout {
+    display: none;
+}
 /* style logo */
 div.side-nav-logo {
     background-color: #014A94;
@@ -8,11 +12,6 @@ div.side-nav-logo {
 /* side navigasi */
 img.side-nav-logo {
     width: 200px;
-    display: none;
-}
-
-/* Log Out */
-div.top-navigasi .logout {
     display: none;
 }
 /* Mobile top navigais Logo */
@@ -47,10 +46,9 @@ span.logout svg {
 
 /* ≥ 768px */
 @media screen and (min-width: 768px) {
-img.side-nav-logo{
+img.side-nav-logo {
     display: block;
 }
-
 div.top-navigasi header{
     padding: 0 20px;
 }

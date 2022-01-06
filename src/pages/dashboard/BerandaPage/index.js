@@ -7,7 +7,6 @@ import Loading from "../../../components/Beranda/Loading";
 import { useHistory } from "react-router";
 import { message } from "../../../helper/message";
 import { Col, Row } from "antd";
-import { dateFormat, getDateWithDay } from "../../../helper/date";
 
 export const BerandaPage = () => {
   const [detail, setDetail] = useState({});
@@ -15,20 +14,15 @@ export const BerandaPage = () => {
   const [isBooking, setBooking] = useState(false);
   const history = useHistory();
 
-  const date = getDateWithDay(null, dateFormat.dateMonth);
-
   useEffect(() => {
     setLoading(true);
-    const userStorage = localStorage.getItem("user_id");
-    const user = JSON.parse(userStorage);
-
     instance
-      .get(`user/${user}/booking`)
+      .get(`book/1`)
       .then((res) => {
-        if (res.data.data === null) {
-          setBooking(false);
-        } else {
+        if (res.data.status === 200) {
           setBooking(true);
+        } else {
+          setBooking(false);
         }
         setDetail(res.data.data);
         setLoading(false);
@@ -41,10 +35,10 @@ export const BerandaPage = () => {
 
   const serviceDone = () => {
     instance
-      .delete(`bank/booking/${detail?.id}`)
+      .delete(`book/selesai/${detail?.id_booking}`)
       .then((res) => {
-        // setBooking(false);
-        window.location.reload();
+        setBooking(false);
+        // window.location.reload();
       })
       .catch((err) => {
         console.log(err);
@@ -69,6 +63,13 @@ export const BerandaPage = () => {
     history.push("/book-nomor-antrian");
   };
 
+  let namaBank = "";
+  if (detail?.id_bank_tujuan === 1) {
+    namaBank = "Bank KCP Soreang";
+  } else if (detail?.id_bank_tujuan === 2) {
+    namaBank = "Bank KCP Banjaran";
+  }
+
   let keperluan = "";
   if (detail?.keperluan_layanan === 1) {
     keperluan = "Pendaftaran (Dilayani oleh Customer Services)";
@@ -87,8 +88,8 @@ export const BerandaPage = () => {
           {isBooking ? (
             <Beranda
               detail={detail}
+              namaBank={namaBank}
               keperluan={keperluan}
-              date={date}
               onClick={onClick}
             />
           ) : (

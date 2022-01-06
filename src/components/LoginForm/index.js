@@ -2,16 +2,17 @@
 import React from "react";
 import { Form, Input, Button, Row, Col } from "antd";
 import "./style.css";
+
+
 import { useHistory } from "react-router";
 
 export const LoginForm = (props) => {
     const history = useHistory();
-    const {onFinish, loadingBtn} = props
     return (
       <div className="login-form">
       <h1>Login</h1>
         <div className="form">
-          <Form onFinish={onFinish} layout="vertical">
+          <Form onFinish={(values) => props.onFinish(values)} layout="vertical">
             <Form.Item
               name="username"
               label="Username"
@@ -29,7 +30,7 @@ export const LoginForm = (props) => {
             </Form.Item>
             <Row >
               <Col span={24}>
-                <Button block htmlType="submit" className="button" loading={loadingBtn}>
+                <Button block htmlType="submit" className="button" loading={props.loadingBtn}>
                   Login
                 </Button>
               </Col>
