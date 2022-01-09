@@ -55,8 +55,7 @@ function Beranda(props) {
             </Paragraph>
             <Paragraph style={{ marginBottom: "10px" }}>
               <Text strong>
-                {props.detail?.tanggal_pelayanan}, pukul{" "}
-                {props.detail?.jam_pelayanan} WIB.
+                {props.date}, pukul {props.detail?.jam_pelayanan} WIB.
               </Text>
             </Paragraph>
             <Paragraph style={{ marginBottom: 0 }}>

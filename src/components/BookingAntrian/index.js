@@ -8,11 +8,10 @@ const layanan = [
   "Transaksi (Dilayani oleh Teller)",
   "Pinjaman (Dilayani oleh Petugas Credit)",
 ];
-  const { Option } = Select;
+const { Option } = Select;
 
 export const BookingAntrian = (props) => {
-  
-  const { dataBank, checkBookingUser, onFinish, isLoading, bankSelected} =
+  const { dataBank, checkBookingUser, onFinish, isLoading, bankSelected } =
     props;
   return (
     <div>

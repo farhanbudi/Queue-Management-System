@@ -7,12 +7,15 @@ import Loading from "../../../components/Beranda/Loading";
 import { useHistory } from "react-router";
 import { message } from "../../../helper/message";
 import { Col, Row } from "antd";
+import { dateFormat, getDateWithDay } from "../../../helper/date";
 
 export const BerandaPage = () => {
   const [detail, setDetail] = useState({});
   const [isLoading, setLoading] = useState(false);
   const [isBooking, setBooking] = useState(false);
   const history = useHistory();
+
+  const date = getDateWithDay(null, dateFormat.dateMonth);
 
   useEffect(() => {
     setLoading(true);
@@ -90,6 +93,7 @@ export const BerandaPage = () => {
               detail={detail}
               namaBank={namaBank}
               keperluan={keperluan}
+              date={date}
               onClick={onClick}
             />
           ) : (
